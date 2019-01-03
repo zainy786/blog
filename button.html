@@ -1,0 +1,40 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .hide{
+        display: none;
+        width:60%;
+        float : left;
+        height : 300px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hide" id ="hide">
+      <button type="button" name="close" onclick="my(2)">close</button>
+
+    </div>
+    <button type="button" name="show" onclick="my(1)">show</button>
+<script>
+function my(a)
+{
+  if(a==1){
+  var g= document.getElementById('hide');
+g.style.display="block";
+}
+if(a==2){
+  var g= document.getElementById('hide');
+g.style.display="none";
+}
+
+
+}
+</script>
+<div class="close" id="hide">
+</div>
+</body>
+</html>
